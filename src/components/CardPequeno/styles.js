@@ -13,11 +13,11 @@ export const ImgCardPequeno = styled.img`
     border-radius: 50%;
 `
 
-export const InfosCardPequeno = styled.section`
+export const InfoCardPequeno = styled.section`
     display: flex;
     align-items: center;
 `
 
-const TituloCardPequeno = styled.h4`
+export const TituloCardPequeno = styled.h4`
     margin-right: 10px;
 `

@@ -1,13 +1,13 @@
 import React from 'react';
-import { LayoutCardPequeno, TituloCardPequeno, InfosCardPequeno} from "./styles"
+import { LayoutCardPequeno, ImgCardPequeno, TituloCardPequeno, InfoCardPequeno} from "./styles"
 
 function CardPequeno(props) {
         <LayoutCardPequeno>
-            <ImgCardPequeno src={props.img} />
-            <InfosCardPequeno>
+            <ImgCardPequeno src={props.imagem} />
+            <InfoCardPequeno>
                 <TituloCardPequeno>{props.nome}</TituloCardPequeno>
-                <p>{props.perfil.descricao}</p>
-            </InfosCardPequeno>
+                <p>{props.descricao}</p>
+            </InfoCardPequeno>
         </LayoutCardPequeno>
 }
 

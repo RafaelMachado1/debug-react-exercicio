@@ -1,16 +1,21 @@
 import React from 'react';
-import styled from 'styled components'
 
+import { LayoutCardGrande } from './styles';
+import { ImgCardGrande } from './styles';
+import { InfoCard } from './styles';
+import { TituloCardGrande } from './styles';
 
-function CardGrande(props) {
+ function CardGrande(props) {
    
     return (
         <LayoutCardGrande>
             <ImgCardGrande src={ props.imagem } />
-            <InfosCardGrande>
+            <InfoCard>
                 <TituloCardGrande>{ props.nome }</TituloCardGrande>
-                <p>{ props.perfil.descricao }</p>
-            </InfosCardGrande>
+                <p>{ props.descricao }</p>
+            </InfoCard>
         </LayoutCardGrande>
     )
 }
+
+export default CardGrande
